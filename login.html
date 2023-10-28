@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RollingGames, Gaming, Juegos, Realidad Virual, Games">
+    <meta name="keywords" content="html, css, javascript, bootstrap, git, github, favicon">
+    <meta name="author" content="Emmanuel, Damián">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-left mb-3 mt-5 text-white">Iniciar Sesión</h2>
+
+          <form class="p-4" id="loginForm">
+            <div class="mb-3 col-md-6">
+              <label for="email" class="form-label text-white mb-0"
+                >Ingresa tu Email</label
+              >
+              <input
+                type="email"
+                class="form-control text-white"
+                id="email"
+                name="email"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="password" class="form-label text-white mb-0"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control text-white"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="remember" />
+              <label class="form-check-label text-white" for="remember"
+                >Recordarme</label
+              >
+              <p id="message" class="text-danger"></p>
+            </div>
+
+            <div class="d-grid gap-2 col-4 mx-auto">
+              <button type="submit" class="btn btn-primary">
+                Iniciar Sesión
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="d-inline-flex flex-column">
+            <h2 class="text-white"></h2>
+            <a href="registrarse.html"
+              ><button type="submit" class="btn btn-primary d-block mt-2">
+                Registrate!
+              </button></a
+            >
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--aqui iria el footer-->
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
