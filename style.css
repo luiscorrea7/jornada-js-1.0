@@ -159,3 +159,17 @@ footer a {
 .menu-item:hover {
   transform: translateY(-30%);
 }
+
+iframe {
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .footerMobile {
+    display: none;
+  }
+  
+  .hrMobile {
+    display: none;
+  }
+}
