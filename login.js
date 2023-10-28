@@ -4,10 +4,6 @@ const formulario = document.getElementById('loginForm');
 
 const login = async (e) => {
   e.preventDefault();
-  const email = document.getElementById('email');
-  const password = document.getElementById('password');
-  const inputs = document.querySelectorAll('#loginForm input');
-  const button = document.querySelector('btn');
   const data = formData(e);
   console.log(data);
   try {
