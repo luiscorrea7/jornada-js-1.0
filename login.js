@@ -1,22 +1,14 @@
-const email = document.getElementById('email');
-const password = document.getElementById('password');
+import { formData } from './js/utils/formData.utils.js';
 const formulario = document.getElementById('loginForm');
-const button = document.querySelector('btn');
 
-const validateForm = () => {
-  if (email == '' && password == '') {
-    alert('completa los campos requeridos');
-  }
-};
-
-const getData = () => {
-  const datos = new FormData(formulario);
-  const datosCompletos = Object.fromEntries(datos.entries());
-  console.log(datosCompletos);
-  formulario.reset();
-  return datosCompletos;
-};
-
-button.addEventListener('submit', (e) => {
+const login = (e) => {
   e.preventDefault();
-});
+  const email = document.getElementById('email');
+  const password = document.getElementById('password');
+  const inputs = document.querySelectorAll('#loginForm input');
+  const button = document.querySelector('btn');
+  const data = formData(e);
+  console.log(data);
+};
+
+formulario.addEventListener('submit', login);
