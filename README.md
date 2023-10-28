@@ -71,3 +71,5 @@ Desplegar la aplicación en un servidor web para que sea accesible en línea.
     - Promesas: <a href="https://universe.rollingcodeschool.com/live/videos/63ed0b55a798367faa942b16?tab=2&video=648fcf19c7544e94fc7bf441" target="_blank">RollingTips</a>
     - Fetch: <a href="https://universe.rollingcodeschool.com/live/videos/63ed0b55a798367faa942b16?tab=2&video=648fcf7cc7544e94fc7c4ae8" target="_blank">RollingTips</a>
     - Async await: <a href="https://universe.rollingcodeschool.com/live/videos/63ed0b55a798367faa942b16?tab=2&video=648fd03dc7544e94fc7cf321" target="_blank">RollingTips</a>
+
+    https://trello.com/invite/b/66pdCJ4F/ATTIa3fc171abbd5d1ffb1a98766a1b0a62f7345E09D/los-busi

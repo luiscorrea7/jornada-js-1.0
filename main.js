@@ -5,7 +5,7 @@ let url = "http://localhost:3000";
 //traer usuarios de la BD
 
 const getUsuarios = async () => {
-  const resp = await fetch(url + "/" + "usuarios");
+  const resp = await fetch(`${url}/usuarios`);
   const data = await resp.json();
 
   return data;
