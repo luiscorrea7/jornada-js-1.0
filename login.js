@@ -1,4 +1,5 @@
 import { formData } from './js/utils/formData.utils.js';
+import { getUsersByEmail } from './js/utils/requestUser.utils.js';
 const formulario = document.getElementById('loginForm');
 
 const login = (e) => {
@@ -9,6 +10,9 @@ const login = (e) => {
   const button = document.querySelector('btn');
   const data = formData(e);
   console.log(data);
+  if (!formData.email === getUsersByEmail) {
+    alert('usuario no encontrado');
+  }
 };
 
 formulario.addEventListener('submit', login);
