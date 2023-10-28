@@ -1,26 +1,22 @@
-const loginUser = (e) => {
-  e.preventDefault();
-  const messageForm = document.getElementById('message');
-  // messageForm.textContent = '';
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const formulario = document.getElementById('loginForm');
+const button = document.querySelector('btn');
 
-  const formData = getFormData(e);
-
-  const userExist = users.find((user) => user.email === formData.email);
-  if (!userExist) {
-    return (messageForm.textContent = messages.userNotExist);
-  }
-  if (
-    userExist.email === formData.email &&
-    userExist.password === formData.password
-  ) {
-    const userToJson = JSON.stringify(userExist);
-    localStorage.setItem('userLog', userToJson);
-    window.location.href = './registrado.html';
-  } else {
-    messageForm.textContent = messages.emailOrPasswordBad;
+const validateForm = () => {
+  if (email == '' && password == '') {
+    alert('completa los campos requeridos');
   }
 };
 
-document
-  .getElementById('loginForm')
-  .addEventListener('submit', loginUser, false);
+const getData = () => {
+  const datos = new FormData(formulario);
+  const datosCompletos = Object.fromEntries(datos.entries());
+  console.log(datosCompletos);
+  formulario.reset();
+  return datosCompletos;
+};
+
+button.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
