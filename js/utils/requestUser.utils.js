@@ -20,6 +20,16 @@ const getUsersById = async (id) => {
   }
 };
 
+const getUsersByEmail = async (email) => {
+  try {
+    const firstData = await fetch(`${URL}/usuarios/?email=${email}`);
+    const finalData = await firstData.json();
+    return finalData;
+  } catch (error) {
+      return console.log(error.message);
+  }
+};
+
 
 const editUser = async (id) => {
  try {
